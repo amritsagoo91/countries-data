@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
 function WeatherDetails({ country }) {
-    const api_key = import.meta.env.VITE_SOME_KEY;
+    const api_key = import.meta.env.VITE_API_KEY;
     const city = country.capital[0];
     const [lat, lon] = country.capitalInfo.latlng;
     const [weather, setWeather] = useState(null);
